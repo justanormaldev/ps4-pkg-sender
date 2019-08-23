@@ -1,0 +1,15 @@
+version: "2"
+services:
+  pkg_sender:
+    build: .
+    container_name: pkg_sender
+    volumes:
+      - ./files:/opt/apps/pkg_sender/files
+    ports:
+      - 3333:8080
+    environment:
+      - PORT=8080
+      - STATIC_FILES=/opt/apps/pkg_sender/files
+      - LOCALIP=192.168.0.2
+      - PS4IP=192.168.0.100
+    restart: unless-stopped

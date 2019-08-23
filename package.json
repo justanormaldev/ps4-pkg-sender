@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "express": "*",
+    "morgan": "*",
+    "mustache": "*",
+    "mustache-express": "*",
+    "filesize": "*"
+  }
+}

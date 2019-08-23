@@ -1,0 +1,4 @@
+#!/bin/sh
+
+DEBUG=express:* node src/app.js
+#http-server ${STATIC_FILES} -p ${PORT}

@@ -1,0 +1,10 @@
+<ul>
+  {{#pkgs}}
+  <li>
+    <form action="/install" method="post" style="margin-bottom: 0">
+      <input type="hidden" name="filepath" value="{{filepath}}">
+      <input type="submit" value="{{name}} ({{size}})">
+    </form>
+  </li>
+  {{/pkgs}}
+</ul>
